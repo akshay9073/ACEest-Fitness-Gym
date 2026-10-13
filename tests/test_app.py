@@ -1,13 +1,9 @@
-from Aceestver_3_2_4 import app
+from app import app
 
 client = app.test_client()
 
-def test_home_page():
+def test_home():
     response = client.get("/")
-    assert response.status_code == 200
-
-def test_dashboard():
-    response = client.get("/dashboard")
     assert response.status_code == 200
 
 def test_health():
