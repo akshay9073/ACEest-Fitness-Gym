@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest -v
+          python3 -m pytest -v
 
       - name: Docker Build
         run: |
